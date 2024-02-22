@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mynudeen Website</title>
+    <link rel="icon" href="images/md.png" type="icon/png">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="../unpkg.com/ionicons%407.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+    <div class="top-nav">
+        <span><ion-icon name="call-outline"></ion-icon>+91 6379860084</span>
+        <ul>
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+    </div>
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="images/md.png" alt="logo">Mynudeen</a>
+        </div>
+        <div class="toggle">
+            <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+        </div>
+        <ul class="menu">
+            <li><a href="#"><ion-icon class="a" name="file-tray-stacked"></ion-icon>Projects</a></li>
+            <li><a href="C:\Users\ELCOT\Desktop\Mynudeen netlify app\Resume\Mynudeen2024.pdf"><ion-icon
+                        name="document"></ion-icon>Resume</a></li>
+            <li><a href="https://github.com/Mynudeen"><ion-icon name="logo-github"></ion-icon>Github</a></li>
+            <li><a href="https://www.linkedin.com/in/mynu-deen-62b69924a/"><ion-icon
+                        name="logo-linkedin"></ion-icon>LinkedIn</a></li>
+            <li><a href="#footer" id="contact-link"><ion-icon name="arrow-down"></ion-icon>Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="banner-img">
+        <img src="images/cmp.jpeg" alt="banner">
+        <div class="banner-text">
+            <h4>MYNUDEEN</h4>
+            <p>Full Stack Developer</p>
+        </div>
+    </div>
+    <div class="summary">
+        <h2>Profile Summary</h2>
+        <p>
+            Recent computer science graduate with a robust background in
+            Java programming, web development, and a fervor for continuous
+            learning and contributing to innovative projects. Actively pursuing
+            an entry-level position as a Java full-stack developer to apply my
+            skills and knowledge to real-world applications, while aiming to
+            enhance my expertise in web development. Eager to leverage my
+            programming skills and contribute to the dynamic landscape of
+
+        </p>
+        <div class="click">
+            <h3>For View Resume<ion-icon name="arrow-redo"></ion-icon></ion-icon></h3>
+            <button><ion-icon name="navigate"></ion-icon><a
+                    href="C:\Users\ELCOT\Desktop\Mynudeen netlify app\Resume\Mynudeen2024.pdf">Click Here</a></button>
+        </div>
+    </div>
+    <h2 class="lan">Skills</h2>
+    <div class="img-galery">
+        <img src="images/java.png" alt="">
+        <img src="images/Python.png" alt="">
+        <img src="images/Postgresql.png" alt="">
+        <img src="images/html.png" alt="">
+        <img src="images/github.jpg" alt="">
+        <img src="images/js.png" alt="">
+        <img src="images/spring%20boot.png" alt="">
+        <img src="images/css.png" alt="">
+    </div>
+    <div class="click">
+        <h3>For Know Our Projects<ion-icon name="arrow-redo"></ion-icon></h3>
+        <button><a href="#"><ion-icon name="navigate"></ion-icon>Click Here</a></button>
+    </div>
+    <h2 class="cer">Cerifications</h2>
+    <div class="certificate">
+
+        <div class="besant">
+            <p>Java Full Stack - Successfully
+                completed Java Full Stack
+                training at Besant Technologies
+                in Velachery, Chennai.</p>
+        </div>
+        <div class="TNCSC">
+            <P>Associate Intern - Successfully
+                completed Internship at TNCSC
+                innovation , Tiruchirappalli.
+            </P>
+        </div>
+        <div class="tcs">
+            <p>tcs nqt - tcs national qualifier test score 70%</p>
+        </div>
+    </div>
+    <div class="linked">
+        <h2 class="lin">Linked In</h2>
+        <a href="/"><img src="d:\Mynudeen netlify app\images\linkedin.jpeg" alt=""></a>
+        <div class="click">
+            <h3>For Visit Our LinkedIn<ion-icon name="arrow-redo"></ion-icon></h3>
+            <button><a href="https://www.linkedin.com/in/mynu-deen-62b69924a/"><ion-icon
+                        name="navigate"></ion-icon>Click Here</a></button>
+        </div>
+    </div>
+    <div class="footer">
+        <h3 class="cus">Contact Us</h3>
+        <footer id="footer">
+            <div class="contact">
+                <h3><ion-icon name="mail-outline"></ion-icon>Gmail : mynudeen007@gamil.com</h3>
+                <h3><ion-icon name="call-outline"></ion-icon>Phone : +91 6379860084</h3>
+            </div>
+            <h4> &copy; 2024 Mynudeen. All Rights Reserved.
+            </h4>
+        </footer>
+    </div>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".menu").hasClass("active")) {
+                    $(".menu").removeClass("active");
+                    $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon");
+                }
+                else {
+                    $(".menu").addClass("active");
+                    $(this).find("a").html("<ion-icon name='close-outline'></ion-icon");
+                }
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
